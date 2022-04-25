@@ -1,24 +1,21 @@
 package com.sita.testcases;
 
+import java.io.IOException;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.io.IOException;
-import java.util.List;
 
 import com.sita.pageObjects.HomePage;
 import com.sita.pageObjects.Select_amenities;
 import com.sita.pages.BaseClass_dev;
 import com.sita.pages.LoginPage;
 import com.sita.pages.WebdriverUtility;
-public class deligation_of_amenities_to_BO extends BaseClass_dev {
-	
+
+public class deligation_of_amenities_to_BOs extends BaseClass_dev{
 	public HomePage Hp = new HomePage(driver);
 
 	@Test(priority=1)
@@ -150,7 +147,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Hp.Click_on_Amenitiestab();
 		Hp.Lock_Button();
 		Thread.sleep(3000);
-		/*Hp.view_files_notes();
+		Hp.view_files_notes();
 		 
 		try {
 			String Files = driver.findElement(By.xpath("//div[@class='download-file']")).getText();
@@ -167,21 +164,13 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		
 		Hp.Files_and_notes_Cross_button();
 		Hp.BackButton();
-		*/
+		
 		Hp.Accept_all_amenities();
 		Thread.sleep(3000);
 		Hp.Accept_popup();
 		Thread.sleep(2000);
 		logger=report.createTest("Check if BO Mumbai can accept all the amenities");
 		Thread.sleep(3000);
-		Hp.view_files_notes();
-		Thread.sleep(2000);
-		{
-			String Files = driver.findElement(By.xpath("//div[@class='download-file']")).getText();
-			String Notes = driver.findElement(By.xpath("//div[normalize-space()='hello']")).getText();
-			System.out.println("The Uploaded file name is--"+Files);
-			System.out.println("The Uploaded file name is--"+Notes);
-		}
 		logger=report.createTest("Check if BO Mumbai can view the file and notes sent by FHE");
 		Hp.BackButton();
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
@@ -191,8 +180,3 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 	
 	}
 }
-
-	
-	
-	
-
