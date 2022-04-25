@@ -32,12 +32,12 @@
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-25T09:18:08Z" name="Default suite" finished-at="2022-04-25T09:19:38Z" duration-ms="90209">
+  <suite started-at="2022-04-25T10:02:27Z" name="Default suite" finished-at="2022-04-25T10:03:56Z" duration-ms="88911">
     <groups>
     </groups>
-    <test started-at="2022-04-25T09:18:08Z" name="Default test" finished-at="2022-04-25T09:19:38Z" duration-ms="90209">
+    <test started-at="2022-04-25T10:02:27Z" name="Default test" finished-at="2022-04-25T10:03:56Z" duration-ms="88911">
       <class name="com.sita.testcases.deligation_of_amenities_to_BO">
-        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:48:06Z" name="ExtentReportsetUp" finished-at="2022-04-25T14:48:08Z" duration-ms="1859" status="PASS">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:32:26Z" name="ExtentReportsetUp" finished-at="2022-04-25T15:32:27Z" duration-ms="1939" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -47,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ExtentReportsetUp -->
-        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:48:08Z" name="openingbrowser" finished-at="2022-04-25T14:48:19Z" duration-ms="10393" status="PASS">
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:32:28Z" name="openingbrowser" finished-at="2022-04-25T15:32:38Z" duration-ms="10799" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -57,11 +57,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- openingbrowser -->
-        <test-method signature="supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:48:19Z" name="supervisor_login_and_assigning_fhe" finished-at="2022-04-25T14:48:37Z" duration-ms="18490" status="PASS">
+        <test-method signature="supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:32:38Z" name="supervisor_login_and_assigning_fhe" finished-at="2022-04-25T15:32:56Z" duration-ms="17515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- supervisor_login_and_assigning_fhe -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:48:37Z" name="Screenshot" finished-at="2022-04-25T14:48:38Z" duration-ms="991" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:32:56Z" name="Screenshot" finished-at="2022-04-25T15:32:57Z" duration-ms="825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:48:38Z" name="fhe_distribution" finished-at="2022-04-25T14:49:06Z" duration-ms="28107" status="PASS">
+        <test-method signature="fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:32:57Z" name="fhe_distribution" finished-at="2022-04-25T15:33:25Z" duration-ms="28043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fhe_distribution -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:49:06Z" name="Screenshot" finished-at="2022-04-25T14:49:07Z" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:33:25Z" name="Screenshot" finished-at="2022-04-25T15:33:25Z" duration-ms="255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:49:07Z" name="Bo_amenities_list" finished-at="2022-04-25T14:49:37Z" duration-ms="30418" status="FAIL">
+        <test-method signature="Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:33:25Z" name="Bo_amenities_list" finished-at="2022-04-25T15:33:55Z" duration-ms="30419" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='download-file']"}
@@ -108,8 +108,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 87864104ac5da73873cc9ee1e46482cc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:11312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b48f179c9952580f0d1e4b0f58da34c5
 *** Element info: {Using=xpath, value=//div[@class='download-file']}]]>
             </message>
             <full-stacktrace>
@@ -119,8 +119,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 87864104ac5da73873cc9ee1e46482cc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:11312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b48f179c9952580f0d1e4b0f58da34c5
 *** Element info: {Using=xpath, value=//div[@class='download-file']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -169,7 +169,7 @@ Session ID: 87864104ac5da73873cc9ee1e46482cc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Bo_amenities_list -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:49:37Z" name="Screenshot" finished-at="2022-04-25T14:49:38Z" duration-ms="666" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:33:55Z" name="Screenshot" finished-at="2022-04-25T15:33:56Z" duration-ms="446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,7 +186,7 @@ Session ID: 87864104ac5da73873cc9ee1e46482cc
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T14:49:38Z" name="closeBrowser" finished-at="2022-04-25T14:49:38Z" duration-ms="828" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@66c61024]" started-at="2022-04-25T15:33:56Z" name="closeBrowser" finished-at="2022-04-25T15:33:56Z" duration-ms="552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
