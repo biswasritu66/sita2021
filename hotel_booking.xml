@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Hotel_booking">
+  <test name="Hotel_booking">
+    <classes>
+      <class name="com.sita.testcases.Hotel_booking">
+      <methods>
+      		<include name="supervisor_login_and_assigning_fhe"></include>
+      		<include name="fhe_distribution"></include>
+      		<include name="supplier_login"></include>
+      </methods>
+      </class>
+   </classes>
+  </test> 
+</suite> <!-- Suite -->
+

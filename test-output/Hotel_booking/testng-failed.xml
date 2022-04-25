@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Hotel_booking]" guice-stage="DEVELOPMENT">
+  <test name="Hotel_booking(failed)">
+    <classes>
+      <class name="com.sita.testcases.Hotel_booking">
+        <methods>
+          <include name="openingbrowser"/>
+          <include name="ExtentReportsetUp"/>
+          <include name="closeBrowser"/>
+          <include name="supplier_login"/>
+          <include name="Screenshot"/>
+        </methods>
+      </class> <!-- com.sita.testcases.Hotel_booking -->
+    </classes>
+  </test> <!-- Hotel_booking(failed) -->
+</suite> <!-- Failed suite [Hotel_booking] -->

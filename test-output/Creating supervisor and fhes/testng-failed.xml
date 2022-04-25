@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Creating supervisor and fhes]" guice-stage="DEVELOPMENT">
+  <test name="Creating fhes(failed)">
+    <classes>
+      <class name="com.sita.testcases.Create_fhes">
+        <methods>
+          <include name="setupTest"/>
+          <include name="customer_details" invocation-numbers="0 1 2 3 4"/>
+          <include name="Closing_browser"/>
+        </methods>
+      </class> <!-- com.sita.testcases.Create_fhes -->
+      <class name="com.sita.testcases.Create_supervisor">
+        <methods>
+          <include name="setupTest"/>
+          <include name="Closing_browser"/>
+        </methods>
+      </class> <!-- com.sita.testcases.Create_supervisor -->
+    </classes>
+  </test> <!-- Creating fhes(failed) -->
+  <test name="Creating supervisor(failed)">
+    <classes>
+      <class name="com.sita.testcases.Create_fhes">
+        <methods>
+          <include name="setupTest"/>
+          <include name="Closing_browser"/>
+        </methods>
+      </class> <!-- com.sita.testcases.Create_fhes -->
+      <class name="com.sita.testcases.Create_supervisor">
+        <methods>
+          <include name="setupTest"/>
+          <include name="customer_details" invocation-numbers="0 1 2 3 4"/>
+          <include name="Closing_browser"/>
+        </methods>
+      </class> <!-- com.sita.testcases.Create_supervisor -->
+    </classes>
+  </test> <!-- Creating supervisor(failed) -->
+</suite> <!-- Failed suite [Creating supervisor and fhes] -->
