@@ -187,7 +187,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
-		
+		logger=report.createTest("Logout from BO");
 	
 	}
 }
