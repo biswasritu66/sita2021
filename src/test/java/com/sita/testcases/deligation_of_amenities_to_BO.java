@@ -95,10 +95,6 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		//valid no of units
 		Sa.Z_mumbai_units(excel.getStringData("Amenities",1,1), excel.getStringData("Amenities",2,1),
 				excel.getStringData("Amenities",3,1));
-		//z_puri_units
-		//Sa.Z_Puri_units(excel.getStringData("Amenities",6,1), excel.getStringData("Amenities",7,1),
-			//	excel.getStringData("Amenities",8,1));
-		
 		Hp.confirm_amenities();
 		Hp.File_Upload();
 		Thread.sleep(2000);
@@ -139,18 +135,19 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 	@Test(priority = 3)
 	public void Bo_amenities_list() throws InterruptedException 
 	{
-		logger=report.createTest("Login as BO Mumbai");
+		//logger=report.createTest("Login as BO Mumbai");
 		//login as BO Mumbai
 		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 0, 0), excel.getStringData("LoginBo", 0, 1));
+		logger=report.createTest("Login as BO Mumbai");
 		HomePage Hp = new HomePage(driver);
 		WebdriverUtility wb = new WebdriverUtility();
 		Hp.Arrow_Button_BO();
 		Hp.Click_on_Amenitiestab();
 		Hp.Lock_Button();
 		Thread.sleep(3000);
-		/*Hp.view_files_notes();
+		Hp.view_files_notes_for_Bo();
 		 
 		try {
 			String Files = driver.findElement(By.xpath("//div[@class='download-file']")).getText();
@@ -159,30 +156,21 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 			System.out.println("The Uploaded file name is--"+Notes);
 		}
 		catch (Exception e) {
-			System.out.println("The uploaded files and notes is not showing");
-			logger=report.createTest("The uploaded files and notes is not showing");
+			System.out.println("The uploaded files and notes is not displaying");
+			logger=report.createTest("The uploaded files and notes is not displaying");
 		}
 		
 		logger=report.createTest("Check if BO Mumbai can view the file and notes sent by FHE");
 		
 		Hp.Files_and_notes_Cross_button();
 		Hp.BackButton();
-		*/
+		
 		Hp.Accept_all_amenities();
 		Thread.sleep(3000);
 		Hp.Accept_popup();
 		Thread.sleep(2000);
 		logger=report.createTest("Check if BO Mumbai can accept all the amenities");
 		Thread.sleep(3000);
-		Hp.view_files_notes();
-		Thread.sleep(2000);
-		{
-			String Files = driver.findElement(By.xpath("//div[@class='download-file']")).getText();
-			String Notes = driver.findElement(By.xpath("//div[normalize-space()='hello']")).getText();
-			System.out.println("The Uploaded file name is--"+Files);
-			System.out.println("The Uploaded file name is--"+Notes);
-		}
-		logger=report.createTest("Check if BO Mumbai can view the file and notes sent by FHE");
 		Hp.BackButton();
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
