@@ -1,5 +1,7 @@
 package com.sita.pageObjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -179,7 +181,7 @@ public class HomePage extends WebdriverUtility{
 	@FindBy(xpath="//div[@class='booking-center-content']//div[1]//div[1]//div[1]//div[2]//div[1]//div[1]//button[1]//*[name()='svg']")WebElement view_files_note_dots ;
 	@FindBy(xpath="//span[normalize-space()='View Files and Notes']")WebElement view_files_notes ;
 	@FindBy(xpath="//span[contains(text(),'Files & Notes')]")WebElement files_notes ;
-	public void view_files_notes()
+	public void view_files_notes_for_Bo()
 	{
 		
 		view_files_note_dots.click();
@@ -187,24 +189,76 @@ public class HomePage extends WebdriverUtility{
 		files_notes.click();
 		
 	}
+	@FindBy(xpath="(//button[@class='ant-btn ant-btn-icon-only ant-btn-background-ghost btn-icon ant-dropdown-trigger'])[3]")WebElement view_files_note_3dots;
+	@FindBy(xpath="//span[normalize-space()='View Status']")WebElement View_status;
+	@FindBy(xpath="//span[contains(text(),'Files & Notes')]")WebElement Files_notes;
+	@FindBy(xpath="//span[contains(@title,'Add Notes and Files')]//*[name()='svg']")WebElement Add_files_notes_button;
+	@FindBy(xpath="//textarea[@placeholder='Notes ... ']")WebElement Notes2;
+	@FindBy(xpath="//span[normalize-space()='Save Note']")WebElement Save_notes;
+	@FindBy(xpath="(//div[normalize-space()='hello'])[1]")WebElement note_text1;
+	@FindBy(xpath="(//div[normalize-space()='Fhe uploaded notes'])")WebElement note_text2;
+	@FindBy(xpath="(//div[@class='download-file'])[1]")WebElement filesname1;
+	@FindBy(xpath="(//div[@class='download-file'])[2]")WebElement filesname2;
+	@FindBy(xpath="(//span[@class='anticon anticon-close'])[1]")WebElement cross_button;
+	@FindBy(xpath="(//span[@class='ant-typography'])[3]") WebElement down_arrow;
+	@FindBy(xpath="//span[normalize-space()='Follow Up']") WebElement FollowUp;
+	@FindBy(xpath="//span[normalize-space()='OK']") WebElement Ok;
+	@FindBy(xpath="//h5[@class='ant-typography _title back-option']") WebElement BackButton2;
+	public void view_files_notes_for_fhe_followup() throws IOException, InterruptedException
+	{
+		
+		view_files_note_3dots.click();
+		View_status.click();
+		Files_notes.click();
+		Add_files_notes_button.click();
+		File_Upload.click();
+		Thread.sleep(3000);
+		Runtime.getRuntime().exec("C:\\Users\\Ritu\\Documents\\sita_file_upload\\fileupload.exe");
+		Notes2.sendKeys("Fhe uploaded notes");
+		Save_notes.click();
+		Thread.sleep(2000);
+		System.out.println("The 1st note is--"+note_text1.getText());
+		System.out.println("The 2nd note is--"+note_text2.getText());
+		System.out.println("The 1st uploaded file is--"+filesname1.getText());
+		System.out.println("The 2nd uploaded file is--"+filesname2.getText());
+		cross_button.click();
+		Thread.sleep(2000);
+		down_arrow.click();
+		FollowUp.click();
+		Thread.sleep(3000);
+		Ok.click();
+		Thread.sleep(2000);
+		BackButton2.click();
+		
+	}
 	
-	@FindBy(xpath="//span[normalize-space()='View Files and Notes']")WebElement view_files_notes1 ;
+	@FindBy(xpath="//span[normalize-space()='Files & Notes']")WebElement view_files_notes_poc ;
 	@FindBy(xpath="//span[contains(text(),'Files & Notes')]")WebElement files_notes1 ;
 	@FindBy(xpath="//div[@class='download-file']")WebElement files_notes_name ;
 	@FindBy(xpath="//div[normalize-space()='hello']")WebElement note_text ;
-	public void view_files_notes_for_poc()
+	@FindBy(xpath="(//div[normalize-space()='POC uploaded notes'])")WebElement note_text3;
+	@FindBy(xpath="(//div[@class='download-file'])[3]")WebElement filesname3;
+	public void supplier_view_files_notes() throws InterruptedException, IOException
 	{
 		
-		view_files_notes1.click();
-		files_notes1.click();
-		
-	}
-	public void supplier_view_files_notes()
-	{
-		
-		files_notes1.click();
-		System.out.println("The file name is--"+files_notes_name.getText());
-		System.out.println("The file name is--"+note_text.getText());
+		view_files_notes_poc.click();
+		Thread.sleep(3000);
+		Add_files_notes_button.click();
+		Thread.sleep(3000);
+		File_Upload.click();
+		Thread.sleep(3000);
+		Runtime.getRuntime().exec("C:\\Users\\Ritu\\Documents\\sita_file_upload\\fileupload.exe");
+		Notes2.sendKeys("POC uploaded notes");
+		Thread.sleep(3000);
+		Save_notes.click();
+		Thread.sleep(2000);
+		System.out.println("The 1st note is--"+note_text1.getText());
+		System.out.println("The 2nd note is--"+note_text2.getText());
+		System.out.println("The 2nd note is--"+note_text3.getText());
+		System.out.println("The 1st uploaded file is--"+filesname1.getText());
+		System.out.println("The 2nd uploaded file is--"+filesname2.getText());
+		System.out.println("The 2nd uploaded file is--"+filesname3.getText());
+		cross_button.click();
 		
 	}
 	
@@ -250,25 +304,87 @@ public class HomePage extends WebdriverUtility{
 		Book_button.click();
 		
 	}
-	@FindBy(xpath="//div[@class='show-more']")WebElement Show_more_poc;
-
-	public void Show_more_poc()
+	@FindBy(xpath="(//div[@class='show-more'])[1]")WebElement Show_more_poc1;
+	@FindBy(xpath="(//div[@class='show-more'])[2]")WebElement Show_more_poc2;
+	@FindBy(xpath="(//div[@class='show-more'])[3]")WebElement Show_more_poc3;
+	@FindBy(xpath="(//div[normalize-space()='Less'])[1]")WebElement Show_Less1;
+	@FindBy(xpath="(//div[normalize-space()='Less'])[2]")WebElement Show_Less2;
+	@FindBy(xpath="(//div[normalize-space()='Less'])[3]")WebElement Show_Less3;
+	public void Show_more_poc1()
 	{
-		Show_more_poc.click();
+		Show_more_poc1.click();
 		
 	}
-	@FindBy(xpath="(//div[@class='select-item'])[2]")WebElement Ritu_poc;
-
-	public void Ritu_poc()
+	public void Show_more_poc2()
 	{
-		Ritu_poc.click();
+		Show_more_poc2.click();
 		
 	}
-	@FindBy(xpath="//div[@class='ant-col']//span[@class='ant-typography']//*[name()='svg']")WebElement downarrow_expand_button;
-
-	public void Expand_button()
+	public void Show_more_poc3()
 	{
-		downarrow_expand_button.click();
+		Show_more_poc3.click();
+		
+	}
+	
+	public void Show_Less1()
+	{
+		Show_Less1.click();
+		
+	}
+	public void Show_Less2()
+	{
+		Show_Less2.click();
+		
+	}
+	public void Show_Less3()
+	{
+		Show_Less3.click();
+		
+	}
+	@FindBy(xpath="//div[@class='select-item']")WebElement Mandeep_poc;
+
+	public void Mandeep_poc()
+	{
+		Mandeep_poc.click();
+		
+	}
+	@FindBy(xpath="(//div[@class='select-item'])[2]")WebElement Ritu_poc1;
+
+	public void Ritu_poc1()
+	{
+		Ritu_poc1.click();
+		
+	}
+	@FindBy(xpath="(//div[@class='select-item'])[3]")WebElement Ritu_poc2;
+
+	public void Ritu_poc2()
+	{
+		Ritu_poc2.click();
+		
+	}
+	@FindBy(xpath="(//div[@class='select-item'])[5]")WebElement Ritu_poc3;
+
+	public void Ritu_poc3()
+	{
+		Ritu_poc3.click();
+		
+	}
+	@FindBy(xpath="(//div[@class='ant-col']//span[@class='ant-typography']//*[name()='svg'])[1]")WebElement downarrow_expand_button1;
+	@FindBy(xpath="(//div[@class='ant-col']//span[@class='ant-typography']//*[name()='svg'])[2]")WebElement downarrow_expand_button2;
+	@FindBy(xpath="(//div[@class='ant-col']//span[@class='ant-typography']//*[name()='svg'])[3]")WebElement downarrow_expand_button3;
+	public void Expand_button1()
+	{
+		downarrow_expand_button1.click();
+		
+	}
+	public void Expand_button2()
+	{
+		downarrow_expand_button2.click();
+		
+	}
+	public void Expand_button3()
+	{
+		downarrow_expand_button3.click();
 		
 	}
 	
@@ -302,41 +418,38 @@ public class HomePage extends WebdriverUtility{
 	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[4]")WebElement downarrow_status_button4;
 	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[1]")WebElement confirm_button1;
 	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[2]")WebElement confirm_button2;
-	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[3]")WebElement confirm_button3;
-	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[4]")WebElement confirm_button4;
+	@FindBy(xpath="//span[normalize-space()='Waitlisted']")WebElement waitlisted_button1;
+	@FindBy(xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/ul[1]/li[2]/span[1]")WebElement waitlisted_button2;
 	
+	@FindBy(xpath="(//span[@class='ant-typography'])[3]")WebElement uparrow_button1;
 	
-	public void status_button1() throws InterruptedException
+	public void Day1() throws InterruptedException
 	{
 		Thread.sleep(3000);
 		downarrow_status_button1.click();
 		Thread.sleep(3000);
 		confirm_button1.click();
-		Thread.sleep(3000);
-	}
-	public void status_button2() throws InterruptedException 
-	{   
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		downarrow_status_button2.click();
 		Thread.sleep(3000);
 		confirm_button2.click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 	}
-	public void status_button3() throws InterruptedException
+	public void Day2() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		downarrow_status_button3.click();
+		downarrow_status_button1.click();
 		Thread.sleep(3000);
-		confirm_button3.click();
+		waitlisted_button1.click();
 		Thread.sleep(3000);
+		//downarrow_status_button2.click();
+		//Thread.sleep(3000);
+		//waitlisted_button2.click();
+		//Thread.sleep(3000);
 	}
-	public void status_button4()throws InterruptedException
+	public void uparrow_button() throws InterruptedException
 	{
-		Thread.sleep(3000);
-		downarrow_status_button4.click();
-		Thread.sleep(3000);
-		confirm_button4.click();
-		Thread.sleep(3000);
+		uparrow_button1.click(); 
 	}
 	
 	@FindBy(xpath="//span[normalize-space()='View History']")WebElement View_History;
@@ -349,19 +462,15 @@ public class HomePage extends WebdriverUtility{
 		//Thread.sleep(3000);
 		Done_Button.click();
 	}
-	@FindBy(xpath="(//input[@class='ant-input'])[1]")WebElement ref_box1;
-	@FindBy(xpath="(//input[@class='ant-input'])[2]")WebElement ref_box2;
+	@FindBy(xpath="(//input[@class='ant-input'])[1]")WebElement ref_box;
+	//@FindBy(xpath="(//input[@class='ant-input'])[2]")WebElement ref_box2;
 	@FindBy(xpath="//span[normalize-space()='Save Changes']")WebElement Save_Changes;
-	public void Ref_box1()
+	public void Ref_box()
 	{
-		ref_box1.sendKeys("123");
+		ref_box.sendKeys("123");
 		
 	}
-	public void Ref_box2()
-	{
-		ref_box2.sendKeys("123");
-		
-	}
+	
 	public void Save_Changes_button()
 	{
 		Save_Changes.click();
@@ -370,10 +479,23 @@ public class HomePage extends WebdriverUtility{
 	
 	@FindBy(xpath="(//td[@class='ant-table-cell'])[2]")WebElement Room_category_no;
 	@FindBy(xpath="(//td[@class='ant-table-cell'])[3]")WebElement Meal_Plan;
-	public void Room_category_no()
+	@FindBy(xpath="(//td[@class='ant-table-cell'])[1]")WebElement Pax;
+	@FindBy(xpath="(//td[@class='ant-table-cell'])[5]")WebElement Contract_Type;
+	@FindBy(xpath="(//div[@class='ant-popover-inner-content'])[1]")WebElement Rate_Details;
+	public void Room_category_no() throws InterruptedException
 	{
 		System.out.println(Room_category_no.getText());
 		System.out.println(Meal_Plan.getText());
+		System.out.println(Pax.getText());
+		
+		
+	}
+	public void Rate_Details() throws InterruptedException
+	{
+		
+		Contract_Type.click();
+		Thread.sleep(2000);
+		System.out.println(Rate_Details.getText());
 	}
 	
 	@FindBy(xpath="(//div[@class='ant-notification-notice-description'])[1]")WebElement error_popup;
